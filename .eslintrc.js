@@ -16,13 +16,6 @@ module.exports = {
   rules: {
     'no-use-before-define' : 'off',
     'prefer-destructuring' : 'off',
-    'prefer-destructuring' : 'off',
     'no-shadow' : 'off',
-    'no-plusplus' : 'off',
-    'no-return-assign' : 'off',
-    'no-param-reassign' : 'off',
-    'prefer-spread' : 'off',
-    'no-unused-vars' : 'off',
-    'prettier/prettier': 'error',
   },
 };
