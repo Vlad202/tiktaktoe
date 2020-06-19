@@ -1,5 +1,4 @@
 import { ROWS_COUNT, COLS_COUNT, generateRows } from './generateField';
-// import { checkForWin } from './winChecker.js'
 
 generateRows(ROWS_COUNT, COLS_COUNT);
 
@@ -22,7 +21,7 @@ fieldNode.querySelectorAll('.row').forEach(e => {
   const row = [];
   cells.forEach(c => {
     row.push(c);
-    c.addEventListener('click', cellClickHandler);
+    c.addEventListener('click', itemHandler);
   });
   fieldObject.push(row);
 });
@@ -119,7 +118,7 @@ window.addEventListener('storage', function onStorage(event) {
     manageDoButtons();
   }
 });
-function cellClickHandler(e) {
+function itemHandler(e) {
   if (wonTitleBlock.classList.contains('hidden')) {
     const player = players[moves.length % players.length];
     move(e.target, player);
